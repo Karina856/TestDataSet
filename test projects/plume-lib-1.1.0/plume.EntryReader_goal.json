@@ -292,7 +292,7 @@
         },
         "comment": "non-null file name for stream being read",
         "kind": "PARAM",
-        "condition": "(args[1]==null)==false"
+        "condition": "args[1]!=null"
       },
       {
         "parameter": {

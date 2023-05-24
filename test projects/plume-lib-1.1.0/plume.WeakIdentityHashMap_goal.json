@@ -409,7 +409,7 @@
     "returnTag": {
       "comment": "true if there is a mapping for key; false otherwise",
       "kind": "RETURN",
-      "condition": ""
+      "condition": "args[0] ? methodResultID==true:methodResultID==false"
     },
     "throwsTags": []
   },
@@ -546,7 +546,7 @@
         },
         "comment": "the new capacity, MUST be a power of two; must be greater than current capacity unless current capacity is MAXIMUM_CAPACITY (in which case value is irrelevant).",
         "kind": "PARAM",
-        "condition": ""
+        "condition": "args[0]!=MAXIMUM_CAPACITY ? args[0]>args[1]"
       }
     ],
     "throwsTags": []
@@ -742,7 +742,7 @@
     "returnTag": {
       "comment": "true if this map maps one or more keys to the specified value.",
       "kind": "RETURN",
-      "condition": ""
+      "condition": "args[0]!=null"
     },
     "throwsTags": []
   },
