@@ -351,7 +351,7 @@
     "returnTag": {
       "comment": "size(a intersect b intersect c)",
       "kind": "RETURN",
-      "condition": ""
+      "condition": "receiverObjectID.intersectionCardinality(args[0],args[1],args[2])"
     },
     "throwsTags": []
   },
